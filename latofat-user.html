@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База | Онлайн куратор Латофат</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="user-page latofat-user-page" data-user-storage="latofat">
+    <div class="user-shell">
+        <aside class="sidebar user-sidebar">
+            <div class="brand"><span class="brand-mark">Б</span><span>База</span></div>
+            <div class="workspace-switcher"><span class="workspace-dot"></span><span>Проект «Север»</span><span class="chevron">⌄</span></div>
+            <nav class="main-nav" aria-label="Навигация Латофат">
+                <p class="nav-label">Кабинет Латофат</p>
+                <a class="nav-item active" href="latofat-user.html"><span class="nav-icon">⌂</span>Главная</a>
+                <p class="nav-label second-label">Расписание</p>
+                <a class="nav-item" href="schedule.html"><span class="nav-icon">▣</span>Расписание спикеров</a>
+                <a class="nav-item" href="curator-schedule.html"><span class="nav-icon">▤</span>Расписание онлайн кураторов</a>
+            </nav>
+            <div class="sidebar-footer"><div class="user-avatar">Л</div><div><strong>Latofat_qadam</strong><small>Онлайн куратор</small></div></div>
+        </aside>
+        <div class="user-content">
+            <header class="user-topbar"><a class="auth-brand" href="index.html"><span class="brand-mark">Б</span><span>База</span></a><div class="user-top-actions"><span class="user-status"><i></i> Данные синхронизированы</span><a href="auth.html" class="logout-link">Выйти</a><span class="mini-avatar">Л</span></div></header>
+            <main class="user-main">
+                <div class="user-heading"><div><p class="eyebrow">ЛИЧНЫЙ РАЗДЕЛ</p><h1>Онлайн куратор Латофат</h1><p>Заполняйте данные и сохраняйте их в общей таблице проекта.</p></div><div class="user-date">Последнее изменение<br><strong id="lastSaved">ещё не сохранялось</strong></div></div>
+                <section class="table-panel"><div class="table-toolbar"><div><span class="section-kicker">ДАННЫЕ ПРОЕКТА</span><h2>Новая запись</h2></div><span class="row-counter" id="rowCounter">1 строка</span></div><div class="table-scroll"><table class="data-table"><thead><tr><th class="number-column">№</th><th>ФИО</th><th>Группа</th><th>Ссылка</th><th>Результат</th><th>Видеоотзыв</th><th aria-label="Удалить"></th></tr></thead><tbody id="tableBody"></tbody></table></div><button class="add-row-btn" id="addRow" type="button"><span>＋</span> Добавить строку</button><div class="save-area"><p class="save-message" id="saveMessage">Изменения пока не сохранены</p><button class="save-btn" id="saveTable" type="button">Сохранить данные <span>✓</span></button></div></section>
+                <p class="user-note"><span>i</span> Сохранённые записи доступны только Латофат.</p>
+            </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

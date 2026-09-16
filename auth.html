@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База | Вход и регистрация</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+    <main class="auth-layout">
+        <section class="auth-intro">
+            <a class="auth-brand" href="auth.html"><span class="brand-mark">Q</span><span>Qadam education</span></a>
+            <div class="intro-copy">
+                <h1>Qadam education<br><em>o'quv bo'limi</em></h1>
+            </div>
+            <div class="intro-footer"><span class="intro-line"></span><span>Qadam education · 2024</span></div>
+        </section>
+
+        <section class="auth-card-wrap">
+            <div class="auth-card">
+                <div class="auth-tabs" role="tablist">
+                    <button class="auth-tab active" data-mode="login" role="tab">Войти</button>
+                </div>
+                <div class="auth-heading">
+                    <h2 id="authTitle">С возвращением</h2>
+                    <p id="authSubtitle">Введите данные, чтобы продолжить работу.</p>
+                </div>
+                <form id="authForm">
+                    <label class="field-label" for="email">Логин или электронная почта</label>
+                    <input class="field-input" id="email" type="text" placeholder="Введите логин" required>
+                    <label class="field-label" for="password">Пароль</label>
+                    <div class="password-field"><input class="field-input" id="password" type="password" placeholder="Введите пароль" required><button class="password-toggle" type="button" aria-label="Показать пароль">◉</button></div>
+                    <label class="field-label register-only" for="confirmPassword">Повторите пароль</label>
+                    <input class="field-input register-only" id="confirmPassword" type="password" placeholder="Повторите пароль">
+                    <div class="form-options"><label class="remember"><input type="checkbox"> <span>Запомнить меня</span></label><button class="forgot-btn" type="button">Забыли пароль?</button></div>
+                    <button class="auth-submit" type="submit" id="submitButton">Войти в аккаунт <span>→</span></button>
+                    <p class="form-message" id="formMessage" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

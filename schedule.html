@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База | Расписание</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="schedule-page">
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand"><span class="brand-mark">Б</span><span>База</span></div>
+            <div class="workspace-switcher"><span class="workspace-dot"></span><span>Проект «Север»</span><span class="chevron">⌄</span></div>
+            <nav class="main-nav" aria-label="Навигация по расписанию">
+                <a class="nav-item admin-only" href="index.html"><span class="nav-icon">⌂</span>Главная</a>
+                <a class="nav-item admin-only" href="index.html#tasks"><span class="nav-icon">☷</span>Задачи</a>
+                <a class="nav-item user-only" id="scheduleHomeLink" href="index.html"><span class="nav-icon">⌂</span>Главная</a>
+                <a class="nav-item active" href="schedule.html"><span class="nav-icon">▣</span>Расписание спикеров</a>
+                    <a class="nav-item" id="curatorScheduleLink" href="curator-schedule.html"><span class="nav-icon">▤</span>Расписание онлайн кураторов</a>
+            </nav>
+            <div class="sidebar-footer"><div class="user-avatar">АЗ</div><div><strong>Азизбек К.</strong><small>Администратор</small></div><span class="more">•••</span></div>
+        </aside>
+        <main class="main-content schedule-main">
+            <header class="topbar"><div class="breadcrumb">Проект «Север» <span>/</span> Расписание</div><div class="top-actions"><button class="icon-btn" aria-label="Поиск">⌕</button><button class="icon-btn notification" aria-label="Уведомления">♧<i></i></button><a class="mini-avatar" href="auth.html" aria-label="Открыть аккаунт">АЗ</a></div></header>
+            <section class="page-heading schedule-heading"><div><p class="eyebrow">КОМАНДА / КАЛЕНДАРЬ</p><h1>Расписание спикеров</h1><p class="heading-copy">Планируйте встречи по дням и временным слотам.</p></div><div class="month-control"><button id="previousMonth" type="button" aria-label="Предыдущий месяц">←</button><strong id="currentMonth">Месяц</strong><button id="nextMonth" type="button" aria-label="Следующий месяц">→</button></div></section>
+            <div class="schedule-meta"><span class="schedule-hint"><i></i> Изменения сохраняются автоматически</span><button class="save-schedule" id="saveSchedule" type="button">Сохранить расписание <span>✓</span></button></div>
+            <section class="speakers-list" id="speakersList"></section>
+            <footer class="footer-note"><span>База проекта · Расписание</span><span id="scheduleUpdated">Изменения не сохранены</span></footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>База | Презентация проекта</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="presentation-page">
+    <div class="app-shell">
+        <aside class="sidebar">
+            <div class="brand"><span class="brand-mark">Б</span><span>База</span></div>
+            <div class="workspace-switcher"><span class="workspace-dot"></span><span>Проект «Север»</span><span class="chevron">⌄</span></div>
+            <nav class="main-nav" aria-label="Навигация презентации">
+                <a class="nav-item" href="index.html"><span class="nav-icon">⌂</span>Главная</a>
+                <a class="nav-item active" href="presentation.html"><span class="nav-icon">▣</span>Презентация</a>
+                <a class="nav-item" href="schedule.html"><span class="nav-icon">▣</span>Расписание спикеров</a>
+                <a class="nav-item" href="curator-schedule.html"><span class="nav-icon">▤</span>Расписание онлайн кураторов</a>
+            </nav>
+            <div class="sidebar-footer"><div class="user-avatar">АЗ</div><div><strong>Азизбек К.</strong><small>Администратор</small></div><span class="more">•••</span></div>
+        </aside>
+        <main class="main-content presentation-main">
+            <header class="topbar"><div class="breadcrumb">Проект «Север» <span>/</span> Презентация</div><div class="top-actions"><a class="mini-avatar" href="auth.html" aria-label="Открыть аккаунт">АЗ</a></div></header>
+            <section class="page-heading presentation-heading"><div><p class="eyebrow">ФАЙЛЫ ПРОЕКТА</p><h1>Презентация проекта</h1><p class="heading-copy">Загружайте материалы команды и храните их в базе проекта.</p></div></section>
+            <section class="presentation-upload panel">
+                <div class="presentation-upload-copy"><span class="upload-mark">↑</span><div><h2>Добавить файлы</h2><p>Презентации, документы, изображения и другие материалы до 5 МБ.</p></div></div>
+                <label class="upload-button" for="presentationFiles"><span>＋</span> Выбрать файлы</label>
+                <input id="presentationFiles" class="visually-hidden" type="file" multiple>
+                <p id="presentationMessage" class="presentation-message">Файлы сохраняются в браузерной базе этого проекта.</p>
+            </section>
+            <section class="panel presentation-files-panel"><div class="panel-heading"><div><p class="section-kicker">ХРАНИЛИЩЕ</p><h2>Сохранённые файлы</h2></div><span class="data-sync-label"><i></i> Локальная база проекта</span></div><div id="presentationList" class="presentation-list"></div></section>
+            <footer class="footer-note"><span>База проекта · Презентация</span><a href="index.html">Вернуться к обзору</a></footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
